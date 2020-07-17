@@ -8,15 +8,17 @@ function mostrarAumento()
 	var importe;
 	var resultado;
 	var descuento;
+	var porcentaje;
 
-	importe=txtIdImporte.value;
+	importe=prompt("Ingrese el importe");
 	importe=parseInt(importe);
 
-	descuento=(importe*25/100);
+	porcentaje=prompt("Ingrese el porcentaje");
+	porcentaje=parseInt(porcentaje);
+
+	descuento=(importe*porcentaje/100);
 
 	resultado=importe-descuento;
 
-	txtIdResultado.value=resultado;
-
-	//alert(resultado);
+	alert("el importe es $"+importe+", el total de descuento es $"+descuento+" y el precio final es $"+resultado+", gracias por su compra");
 }
